@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <article>
+        <section>
+            <h3>Input a temperature</h3>
+            <input type="text" name="temp" id="temp">
+            <input type="radio" id="tempTypeC" name="tempType" value="celsius">
+            <label for="tempTypeC">Celsius</label>
+        
+            <input type="radio" id="tempTypeF" name="tempType" value="fahrenheit">
+            <label for="tempTypeF">Fahrenheit</label>
+            <input type="button" id="convert" value="Convert">
+        </section>
+        <section id="newTemp">
+            <!-- This is where the converted temperature will display on the DOM -->
+        </section>
+        <section>
+            <input type="button" id="reset" value="RESET">
+        </section>
+
+    </article>
+    <script src="converter.js"></script>
+</body>
+</html>
